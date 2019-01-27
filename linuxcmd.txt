@@ -1,4 +1,4 @@
-  1  cat /etc/yum.repos.d/redhat-rhui.repo
+  1  cat /etc/yum.repos.d/redhat-rhui.repo
     2  yum install https -y
     3  rpm -qa | grep httpd
     4  yum install git -y
