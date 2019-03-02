@@ -1,0 +1,63 @@
+
+
+
+Paste this link to git bash terminal
+ssh -i "AWS-Demo.pem" ec2-user@ec2-18-191-161-41.us-east-2.compute.amazonaws.com
+
+
+sudo su -
+cat /etc/passwd
+who 
+netstat -tulpn >>which process is running on which portal 
+
+vi /etc/ssh/sshd_config 
+ps -ef | grep 25664(process id)
+esc (insert mode) 
+:
+:set number
+
+service sshd restart
+
+ mkdir -p /opt/gitdemo
+    7  cd gitdemo/
+    8  git init
+    9  vi linuxcmd.txt
+
+  git status
+   16  git add linuxcmd.txt
+   17  git status
+   18  git commit -m"my first commit"
+   19  git status
+
+
+------------------------
+  1  cat  /etc/yum.repos.d/redhat-rhui.repo
+    2  yum install https -y
+    3  rpm -qa | grep httpd
+    4  yum install git -y
+    5   cd /opt/
+    6  mkdir -p /opt/gitdemo
+    7  cd gitdemo/
+    8  git init
+    9  vi linuxcmd.txt
+   10  history
+   11  vi linuxcmd.txt
+   12  cat linuxcmd
+   13  cat linuxcmd.txt
+   14  ls -l
+   15  git status
+   16  git add linuxcmd.txt
+   17  git status
+   18  git commit -m"my first commit"
+   19  git status
+   20  history
+
+
+
+
+-------------
+[all]
+172.31.16.218 ansible_ssh_private_key_file=/root/.ssh/server1.pem ansible_ssh_user=ec2-user
+
+
+ansible all -m raw -a 'sudo uptime'
